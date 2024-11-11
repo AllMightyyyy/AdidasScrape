@@ -1,0 +1,15 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Pattern: [timestamp] [log level] message -->
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%level] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <!-- Debugging for specific packages -->
+    <logger name="org.zakariafarih" level="debug" />
+</configuration>
